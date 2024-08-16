@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+    left: 0;
+    font-family: "Joe College Sans NF W05 Regula";
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    backdrop-filter: blur(5px);
+   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.top-nav .site-name {
+    margin-left: 140px;
+    margin-right: 400px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+   
+}
+li a{
+    text-decoration: none;
+    color: rgb(129, 33, 33);
+    color: #353534;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    padding: 55px;
+}
+li a:hover{
+   
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+}
+.top-nav a.active {
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+  }
+li a:active{
+    box-shadow: 2px 2px 5px rgb(131, 127, 127);
+}
+li a:visited{
+    color: rgb(129, 33, 33);
+}
+.order{
+    margin-right: 40px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #c5c523;
+
+}
+.search {
+    flex-grow: 1;
+    display: flex;
+   justify-content: center;
+    align-items: center;
+height: 300px;
+background-image: url(https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg);
+background-size: cover;
+background-position: center;
+
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    margin-right: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 4px;
+    width: 283px;
+    margin-top: 50px;
+}
+
+.search button {
+    padding: 6px 10px;
+    background: white;
+    color: rgb(18, 186, 215);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search button i {
+    font-size: 18px;
+}
+
+.search button:hover {
+    background: rgb(11, 252, 232);
+    color: white;
+}
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 70%;
+	margin: 5% auto;
+}
+.product-area {
+	width: 30%;
+	margin-bottom: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	overflow: hidden;
+	background-color: #fff;
+	border-radius: 25px;
+}
+.img-area {
+	position: relative;
+	width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 25px 25px 0 0;
+
+
+}
+.img-area img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.product-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0
+}
+.product-overlay:hover {
+	opacity: 0.9;
+	background-color: rgba(89, 82, 82, 0.384);
+	transition: opacity 0.5s ease;
+}
+.overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.btn-1 {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #265f61;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn-2 {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.info-area {
+	padding: 10px 20px;
+	text-align: center;
+	background-color: transparent;
+}
+.info-area h3 {
+	font-size: 25px;
+	margin: 0;
+	margin-bottom: 10px;
+	color: #000000;
+	font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.rating {
+	margin-bottom: 10px;
+}
+.rating span {
+	color: #fff;
+}
+.checked {
+	color: orange !important;
+}
+.product-price {
+	font-size: 25px;
+	color: #000000;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+/* @media (max-width: 768px) {
+	.product-area {
+		width: 48%;
+	}
+}
+@media (max-width: 576px) {
+	.product-area {
+		width: 100%;
+	}
+} */
+  
+
+.next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+.material-symbols-outlined{
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: #265f61;
+   color: #265f61;
+   font-size: 30px;
+   padding: 5px;
+   margin: 10px;
+   
+}
+.material-symbols-outlined:hover{
+   color: #558d8f;
+   border: 2px solid black;
+   border-color: #558d8f;
+
+}
+
+
+
+
+
+
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+.f1{
+    color: #2828278e;
+
+}
