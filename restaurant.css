@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ 
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+    left: 0;
+    font-family: "Joe College Sans NF W05 Regula";
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    backdrop-filter: blur(5px);
+   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.top-nav .site-name {
+    margin-left: 140px;
+    margin-right: 400px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+   
+}
+li a{
+    text-decoration: none;
+    color: rgb(129, 33, 33);
+    color: #353534;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    padding: 55px;
+}
+li a:hover{
+   
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+}
+.top-nav a.active {
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+  }
+li a:active{
+    box-shadow: 2px 2px 5px rgb(131, 127, 127);
+}
+li a:visited{
+    color: rgb(129, 33, 33);
+}
+.order{
+    margin-right: 40px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #c5c523;
+
+}
+.stripe {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 80px;
+}
+.stripe.hero .stripe--content {
+    padding: 20px;
+}
+.stripe--content {
+    color: #282827;
+    padding: 50px;
+    max-width: 400px;
+}
+.stripe--image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 20px;
+    
+}
+.order1{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #606009;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-left: 40px;
+   
+}
+h2{
+    font-size: 32px;
+    font-weight: bold;
+    animation: blink 2s linear infinite;
+		
+	}
+    @keyframes blink{
+        0%{opacity: 0;}
+        50%{opacity: .5;}
+        100%{opacity: 1;}
+        }
+
+.burger{
+    text-align: center;
+    color: #474742;
+}
+h3{
+    opacity: 0.7;
+    
+}
+.bounce {
+
+   
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+    /* Adding a subtle shadow */
+}
+
+.bounce p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    transform: translateX(500%);
+    animation: bouncing-text 10s ease-in-out infinite alternate;
+}
+
+@keyframes bouncing-text {
+    0% {
+        transform: translateX(50%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+          /* Product Page */
+          
+          .collection{
+            animation: myanimation 10s infinite;
+          }
+          @keyframes myanimation {
+            0% {color: red;}
+            25%{color:rgb(86, 86, 9);}
+            50%{color:rgb(93, 54, 185);}
+            75%{color:rgb(67, 179, 192);}
+            100% {color: red;}
+          }
+
+          .flip-card-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            margin-left: 100px;
+            padding-left: 20px;
+          
+          }
+          
+          .flip-card {
+            margin-bottom: 20px;
+          }
+          
+          .flip-card-inner {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+          }
+          
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          
+          .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+          }
+          
+          .flip-card-front {
+            background-color: #ffffff;
+            color: black;
+          }
+          
+          .flip-card-back {
+            background-color: #fff;
+            color: rgb(124, 48, 48);
+            transform: rotateY(180deg);
+          }
+          .flip-card-back h1{
+            color: #c5c523;
+          }
+.btn2{
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #3ba48994;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-left: 900px;
+    border-color: wheat;
+}
+.btn2 a{
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+}
+.btn2:hover{
+    background-color: #3ba489;
+}
+.app{
+    background-color: #efe5cc;
+    text-align: center;
+    
+}
+.email{
+    width: 220px;
+    height: 2.5em;
+    font-size: 15px;
+    border-color: #fff;
+    border-radius: 10px;
+    margin-left: 75px;
+}
+.share{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #fb8a8a;
+    border-color: #fb8a8a;
+    color: #1b1818;
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+.f1{
+    color: #2828278e;
+
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 500px) {
+    body{
+        background-color: #fae697;
+    }
+    
+}
