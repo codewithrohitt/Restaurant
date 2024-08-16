@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+        *{
+    padding: 0;
+    margin: 0;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 20px 0;
+    left: 0;
+    font-family: "Joe College Sans NF W05 Regula";
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    backdrop-filter: blur(5px);
+   
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.top-nav .site-name {
+    margin-left: 140px;
+    margin-right: 400px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+   
+}
+li a{
+    text-decoration: none;
+    color: rgb(129, 33, 33);
+    color: #353534;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    padding: 55px;
+}
+li a:hover{
+   
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+}
+.top-nav a.active {
+    text-decoration: underline;
+    text-shadow: #353534;
+    color: rgb(206, 14, 14);
+  }
+li a:active{
+    box-shadow: 2px 2px 5px rgb(131, 127, 127);
+}
+li a:visited{
+    color: rgb(129, 33, 33);
+}
+.order{
+    margin-right: 40px;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: #c5c523;
+
+}
+#ContactUs {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.form-shape input,
+.form-shape select,
+.form-shape textarea {
+    width: 92%;
+    padding: 0.5rem;
+}
+
+/*Changing the color of placeholder*/
+::placeholder {
+    color: gray;
+}
+.submit{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c5c523;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.reset{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #c5c523;
+    cursor: pointer;
+    font-size: 15px;
+}
+.submit:hover{
+    background-color: #e9e98f;
+  
+
+    
+}
+.reset:hover{
+    background-color: #e9e98f;
+  
+
+    
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+.f1{
+    color: #2828278e;
+
+}
+
+
+
+    </style>
+    </head>
+    <body>
+        <div class="top-nav">
+            <div class="site-name"><a href="restaurant.html"
+                    style="text-decoration: none; color: black;">The Food
+                    Point</a></div>
+
+            <ul>
+
+                <li><a href="restaurant.html">Home</a></li>
+                <li><a href="cat.html">Categories</a></li>
+                <li><a href="sign.html">Sign up</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="order"> <a href="login.html"
+                    style="text-decoration: none;"> Sign in </a></button>
+
+        </div><br><br><br>
+        <div id="ContactUs">
+            <h1>Contact Us</h1><br><br>
+            <form action="#">
+                <div class="form-shape">
+                    <label for="query">
+                        Type of Query
+                    </label><br>
+                    <select name="myQuery" id="query">
+                        <option value="sel" selected>
+                            Select
+                        </option>
+                        <option value="ord">
+                            Order related Issues
+                        </option>
+                        <option value="Site">
+                            Site related Issues
+                        </option>
+                        <option value="fed">
+                            Complaint related Issues
+                        </option>
+                        <option value="others">
+                            Others
+                        </option>
+                    </select>
+                </div><br><br>
+                <div class="form-shape">
+                    <label for="name">Name</label>
+                    <input type="text" name="myName" id="name"
+                        placeholder="Enter your Name" required>
+                </div><br><br>
+                <div class="form-shape">
+                    <label for="email">Email-Id</label>
+                    <input type="email" name="myEmail" id="email"
+                        placeholder="Enter your email" required>
+                </div><br><br>
+                <div class="form-shape">
+                    <label for="pho">Phone Number</label>
+                    <input type="phone" name="myPhone" id="pho"
+                        placeholder="Enter your Phone no" required>
+                </div><br><br>
+                <div id="radio">
+                    Are you a member of The Food Point: <br><br>
+                    Yes <input type="radio" name="eligible">
+                    No <input type="radio" name="eligible">
+                </div><br><br>
+                <div class="form-shape">
+                    <label for="message">
+                        Comment your query
+                    </label>
+                    <textarea name="mesg" id="message" cols="30" rows="10">
+                    </textarea>
+                </div><br>
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Reset" class="reset">
+            </form>
+        </div>
+        <br><br>
+        <footer class="footer">
+            <p class="f1">THE FOOD POINT 01 BHESTAN, SURAT, GJ, 395023, INDIA
+                9865741235 rohit@thefoodpoint.com</p>
+            <i class="fa fa-instagram" style="font-size:20px"></i>
+            <i class="fa fa-facebook" style="font-size:20px"></i>
+            <i class="fa fa-twitter" style="font-size:20px"></i>
+        </footer>
+    </body>
+</html>

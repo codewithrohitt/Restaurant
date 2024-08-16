@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nova Round", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+        body{
+            background-color: #f1f1f1;
+            background-image: url(https://images.pexels.com/photos/15147754/pexels-photo-15147754/free-photo-of-people-in-a-restaurant.jpeg);
+           
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box{
+            width: 750px;
+            height: 500px;
+            background-color: #fff;
+            margin: 0 auto;
+            margin-top: 250px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 0  black;
+
+        }
+        
+        .logo img{
+            width: 300px;
+            height: 400px; 
+           position: relative;
+           top: 50px;
+           left: 25px;
+           border-radius: 10px;
+
+
+        }
+        .login{
+            position: relative;
+            bottom: 350px;
+            left: 500px;
+        }
+        .form{
+            position: relative;
+            right: 100px;
+        }
+        input{
+            width: 200px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            font-size: 15px;
+
+        }
+        button{
+           width: 120px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            position: relative;
+            right: 50px;
+
+            font-size: 15px;
+            background-color: #ccc;
+            color: #fff;
+            cursor: pointer;
+
+
+        }
+        button:hover{
+            background-color: #fff;
+            color: #ccc;
+
+        }
+        button a{
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+
+        }
+        p{
+            position: relative;
+            right: 100px;   
+
+        }
+        .footer{
+    text-align: center;
+    font-size: 15px;
+    
+
+}
+.f1{
+    color: #2828278e;
+
+}
+        
+       
+    </style>
+    </head>
+    <body>
+       
+    
+        <div class="box">
+            <div class="logo">
+                <img
+                    src="https://images.pexels.com/photos/1813466/pexels-photo-1813466.jpeg"
+                    alt>
+
+            </div>
+            <div class="login">
+                <h2 style="text-decoration: underline; font-size: 30px;" >Login </h2><br><br>
+                <label for="name" class="form">Email or Phone</label><br>
+                <input type="text" placeholder="Email or Phone" class="form" required><br>
+                <label for="name" class="form">Password</label><br>
+                <input type="password" placeholder="Password" class="form" required> 
+                <p> <a href="#"> Forgot password?</a></p>
+                <br><br></a>
+                <button><a href="restaurant.html">Login</a></button> <br><br>
+                <p>Not a member? <a href="sign.html">Signup now</a></p>
+            </div>
+        </div>
+        <br><br>
+    <footer class="footer">
+      <p class="f1">THE FOOD POINT 01 BHESTAN, SURAT, GJ, 395023, INDIA
+        9865741235 rohit@thefoodpoint.com</p>
+      <i class="fa fa-instagram" style="font-size:20px"></i>
+      <i class="fa fa-facebook" style="font-size:20px"></i>
+      <i class="fa fa-twitter" style="font-size:20px"></i>
+    </footer>
+    </body>
+</html>
